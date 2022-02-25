@@ -1,0 +1,15 @@
+html,
+body,
+#app {
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #121212;
+}
+
+html.dark canvas {
+  /* filter: hue-rotate(280deg); */
+}
