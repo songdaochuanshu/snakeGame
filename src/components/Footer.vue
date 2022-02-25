@@ -4,7 +4,7 @@
  * @Author: MiKin
  * @Date: 2022-02-25 14:45:31
  * @LastEditors: MiKin
- * @LastEditTime: 2022-02-25 15:50:30
+ * @LastEditTime: 2022-02-25 16:00:43
  * @FilePath: \snakeGame\src\components\Footer.vue
 -->
 <script setup lang="ts">
@@ -22,7 +22,7 @@ import { isDark, toggleDark } from '~/composables'
       class="icon-btn"
       i-carbon-logo-github
       rel="noreferrer"
-      href="https://github.com/songshuxiansheng/snakeGame"
+      href="https://github.com/songdaochuanshu/snakeGame"
       target="_blank"
       title="GitHub"
     />
