@@ -1,0 +1,36 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: MiKin
+ * @Date: 2022-02-25 14:45:31
+ * @LastEditors: MiKin
+ * @LastEditTime: 2022-02-25 15:37:30
+ * @FilePath: \snakeGame\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <title>snakeGame - 松岛川树</title>
+  <meta name="description" content="snakeGame - 松岛川树">
+  <meta name="keywords" content="snakeGame - 松岛川树">
+  <meta name="author" content="松岛川树">
+  <meta name="copyright" content="松岛川树">
+  <meta name="github" content="http://github.com/songdaochuanshu" />
+  <meta name="description" content="Opinionated Vite Starter Template">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    (function() {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('color-schema') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+  </script>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
