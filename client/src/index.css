@@ -3,6 +3,94 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ============================================
+   Cyberpunk Color System
+   ============================================ */
+:root {
+  /* Cyberpunk Neon Colors */
+  --neon-green: oklch(0.70 0.35 130);
+  --neon-pink: oklch(0.65 0.32 330);
+  --neon-cyan: oklch(0.50 0.20 180);
+  --dark-purple: oklch(0.12 0.10 280);
+  --grid-line: oklch(0.50 0.20 180 / 0.3);
+
+  /* Tailwind Theme Variables */
+  --primary: var(--neon-green);
+  --primary-foreground: var(--dark-purple);
+  --secondary: var(--neon-pink);
+  --secondary-foreground: var(--dark-purple);
+  --accent: var(--neon-cyan);
+  --accent-foreground: var(--dark-purple);
+  --destructive: var(--neon-pink);
+  --destructive-foreground: var(--dark-purple);
+  --muted: oklch(0.30 0.08 280);
+  --muted-foreground: oklch(0.60 0.15 180);
+  --border: var(--neon-cyan);
+  --input: var(--dark-purple);
+  --ring: var(--neon-green);
+  --radius: 0.25rem;
+
+  /* Background & Foreground */
+  --background: var(--dark-purple);
+  --foreground: var(--neon-cyan);
+  --card: oklch(0.15 0.08 280);
+  --card-foreground: var(--neon-cyan);
+  --popover: var(--dark-purple);
+  --popover-foreground: var(--neon-cyan);
+
+  /* Sidebar */
+  --sidebar: var(--dark-purple);
+  --sidebar-foreground: var(--neon-cyan);
+  --sidebar-primary: var(--neon-green);
+  --sidebar-primary-foreground: var(--dark-purple);
+  --sidebar-accent: var(--neon-pink);
+  --sidebar-accent-foreground: var(--dark-purple);
+  --sidebar-border: var(--neon-cyan);
+  --sidebar-ring: var(--neon-green);
+
+  /* Chart Colors */
+  --chart-1: var(--neon-green);
+  --chart-2: var(--neon-pink);
+  --chart-3: var(--neon-cyan);
+  --chart-4: oklch(0.65 0.25 40);
+  --chart-5: oklch(0.55 0.20 280);
+}
+
+.dark {
+  --primary: var(--neon-green);
+  --primary-foreground: var(--dark-purple);
+  --secondary: var(--neon-pink);
+  --secondary-foreground: var(--dark-purple);
+  --accent: var(--neon-cyan);
+  --accent-foreground: var(--dark-purple);
+  --destructive: var(--neon-pink);
+  --destructive-foreground: var(--dark-purple);
+  --muted: oklch(0.30 0.08 280);
+  --muted-foreground: oklch(0.60 0.15 180);
+  --border: var(--neon-cyan);
+  --input: var(--dark-purple);
+  --ring: var(--neon-green);
+  --background: var(--dark-purple);
+  --foreground: var(--neon-cyan);
+  --card: oklch(0.15 0.08 280);
+  --card-foreground: var(--neon-cyan);
+  --popover: var(--dark-purple);
+  --popover-foreground: var(--neon-cyan);
+  --sidebar: var(--dark-purple);
+  --sidebar-foreground: var(--neon-cyan);
+  --sidebar-primary: var(--neon-green);
+  --sidebar-primary-foreground: var(--dark-purple);
+  --sidebar-accent: var(--neon-pink);
+  --sidebar-accent-foreground: var(--dark-purple);
+  --sidebar-border: var(--neon-cyan);
+  --sidebar-ring: var(--neon-green);
+  --chart-1: var(--neon-green);
+  --chart-2: var(--neon-pink);
+  --chart-3: var(--neon-cyan);
+  --chart-4: oklch(0.65 0.25 40);
+  --chart-5: oklch(0.55 0.20 280);
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -42,84 +130,115 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-:root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+/* ============================================
+   Cyberpunk Animations
+   ============================================ */
+@keyframes scanlines {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
 }
 
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+@keyframes pulse-neon {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
 }
 
+@keyframes glow-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px var(--neon-pink)) drop-shadow(0 0 16px var(--neon-pink));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px var(--neon-pink)) drop-shadow(0 0 24px var(--neon-pink));
+  }
+}
+
+@keyframes particle-float {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--tx), var(--ty)) scale(0.3);
+  }
+}
+
+/* ============================================
+   Cyberpunk Typography & Utility Classes
+   ============================================ */
+.font-orbitron {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.font-space-mono {
+  font-family: "Space Mono", monospace;
+}
+
+.neon-glow {
+  color: var(--neon-green);
+  text-shadow:
+    0 0 10px var(--neon-green),
+    0 0 20px var(--neon-green),
+    0 0 30px var(--neon-green),
+    0 0 40px var(--neon-green);
+}
+
+.neon-glow-pink {
+  color: var(--neon-pink);
+  text-shadow:
+    0 0 10px var(--neon-pink),
+    0 0 20px var(--neon-pink),
+    0 0 30px var(--neon-pink),
+    0 0 40px var(--neon-pink);
+}
+
+.neon-border {
+  border-color: var(--neon-cyan);
+  box-shadow:
+    inset 0 0 10px var(--neon-cyan),
+    0 0 20px var(--neon-cyan),
+    0 0 40px var(--neon-cyan);
+}
+
+.scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  animation: scanlines 8s linear infinite;
+  z-index: 999;
+}
+
+/* ============================================
+   Base Layer Styles
+   ============================================ */
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
@@ -133,25 +252,15 @@
   }
 }
 
+/* ============================================
+   Component Layer Styles
+   ============================================ */
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -162,16 +271,186 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
+  }
+
+  /* Game Canvas Styles */
+  .game-canvas {
+    border: 2px solid var(--neon-cyan);
+    border-radius: 0.25rem;
+    box-shadow:
+      inset 0 0 20px var(--neon-cyan),
+      0 0 30px var(--neon-cyan),
+      0 0 60px var(--neon-cyan);
+    background-color: var(--dark-purple);
+  }
+
+  /* Control Button Styles */
+  .control-btn {
+    background-color: var(--dark-purple);
+    border: 2px solid var(--neon-cyan);
+    color: var(--neon-cyan);
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    transition: all 200ms;
+    box-shadow: 0 0 10px var(--neon-cyan);
+    cursor: pointer;
+    border-radius: 0.25rem;
+  }
+
+  .control-btn:hover {
+    background-color: var(--neon-cyan);
+    color: var(--dark-purple);
+    box-shadow: 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-cyan);
+  }
+
+  .control-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* D-Pad Button */
+  .dpad-btn {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--dark-purple);
+    border: 2px solid var(--neon-cyan);
+    color: var(--neon-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    transition: all 150ms;
+    box-shadow: 0 0 8px var(--neon-cyan);
+    cursor: pointer;
+  }
+
+  .dpad-btn:hover {
+    background-color: var(--neon-cyan);
+    color: var(--dark-purple);
+    box-shadow: 0 0 16px var(--neon-cyan);
+  }
+
+  .dpad-btn:active {
+    transform: scale(0.9);
+  }
+
+  /* Score Display */
+  .score-display {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--neon-pink);
+    text-shadow:
+      0 0 10px var(--neon-pink),
+      0 0 20px var(--neon-pink),
+      0 0 30px var(--neon-pink),
+      0 0 40px var(--neon-pink);
+  }
+
+  /* Game Over Modal */
+  .game-over-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+
+  .game-over-content {
+    background-color: var(--dark-purple);
+    border: 4px solid var(--neon-pink);
+    padding: 2rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    box-shadow:
+      inset 0 0 20px var(--neon-pink),
+      0 0 40px var(--neon-pink),
+      0 0 80px var(--neon-pink);
+  }
+
+  .game-over-title {
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--neon-pink);
+    text-shadow:
+      0 0 10px var(--neon-pink),
+      0 0 20px var(--neon-pink),
+      0 0 30px var(--neon-pink),
+      0 0 40px var(--neon-pink);
+    margin-bottom: 1rem;
+  }
+
+  .game-over-score {
+    font-family: "Space Mono", monospace;
+    font-size: 1.25rem;
+    color: var(--neon-cyan);
+    margin-bottom: 2rem;
+  }
+
+  .play-again-btn {
+    padding: 0.75rem 2rem;
+    background-color: var(--neon-green);
+    color: var(--dark-purple);
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    transition: all 200ms;
+    box-shadow: 0 0 20px var(--neon-green);
+    cursor: pointer;
+    border: none;
+  }
+
+  .play-again-btn:hover {
+    box-shadow: 0 0 30px var(--neon-green), 0 0 60px var(--neon-green);
+  }
+
+  .play-again-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* Status Text */
+  .status-text {
+    font-family: "Space Mono", monospace;
+    font-size: 0.875rem;
+    color: var(--neon-cyan);
+  }
+
+  .status-text.playing {
+    color: var(--neon-green);
+  }
+
+  .status-text.paused {
+    color: var(--neon-pink);
+  }
+}
+
+/* ============================================
+   Utility Animations
+   ============================================ */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-pulse-neon {
+    animation: pulse-neon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+
+  .animate-scanlines {
+    animation: scanlines 8s linear infinite;
   }
 }
