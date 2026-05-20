@@ -8,6 +8,8 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06b6d4?style=flat-square&logo=tailwindcss)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
+**🚀 在线演示**: [Cloudflare Pages](https://cyberpunk-snake-game.pages.dev)
+
 ## ✨ 核心特性
 
 ### 🎨 赛博朋克视觉设计
@@ -135,24 +137,16 @@ pnpm check
 4. **游戏结束**：蛇与自身碰撞时游戏结束
 5. **重新开始**：点击 "PLAY AGAIN" 按钮重新开始游戏
 
-## 🎨 赛博朋克设计理念
+## 🎨 赛博朋克设计
 
-### 色彩方案
-- **背景**：深紫色 `oklch(0.12 0.10 280)` - 营造深邃的夜间氛围
-- **蛇身**：荧光绿 `oklch(0.70 0.35 130)` - 高对比度，充满能量
-- **食物**：荧光粉红 `oklch(0.65 0.32 330)` - 吸引注意力
-- **网格**：青色 `oklch(0.50 0.20 180)` - 科技感和冷调
+采用**赛博朋克网格美学**风格，具有以下设计特点：
 
-### 排版系统
-- **标题**：Orbitron Bold - 未来感的几何字体
-- **正文**：Space Mono - 等宽单调字体，科技感强
-- **发光效果**：多层 text-shadow 实现霓虹效果
-
-### 动画设计
-- **扫描线**：8秒循环，模拟 CRT 显示器效果
-- **脉冲**：食物持续脉冲，吸引玩家注意
-- **粒子**：爆炸效果带重力和生命值衰减
-- **过渡**：按钮 hover 和 active 状态的平滑过渡
+- **霓虹色彩**：荧光绿蛇、荧光粉红食物、青色网格、深紫色背景
+- **发光效果**：多层 box-shadow 和 text-shadow 实现逼真的霓虹发光
+- **扫描线动画**：全屏扫描线覆盖层，8秒无限循环
+- **粒子系统**：吃食物时产生粒子爆炸效果
+- **排版**：Orbitron（标题）+ Space Mono（正文）
+- **动画**：流畅的过渡和脉冲效果
 
 ## 📱 多端测试
 
@@ -202,6 +196,33 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 ## 🤝 贡献
 
 欢迎提交 Issue 和 Pull Request！
+
+## 🚀 部署
+
+### Cloudflare Pages（推荐）
+
+1. 访问 [Cloudflare Dashboard](https://dash.cloudflare.com)
+2. 创建新的 Pages 项目，连接此 GitHub 仓库
+3. 配置构建设置：
+   - Framework: `Vite`
+   - Build command: `pnpm build`
+   - Output directory: `dist`
+4. 点击部署，完成！
+
+**在线演示**: https://cyberpunk-snake-game.pages.dev
+
+### 本地开发
+
+```bash
+# 安装依赖
+pnpm install
+
+# 启动开发服务器
+pnpm dev
+
+# 构建生产版本
+pnpm build
+```
 
 ## 📞 联系方式
 
