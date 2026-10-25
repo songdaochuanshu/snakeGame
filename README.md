@@ -8,7 +8,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06b6d4?style=flat-square&logo=tailwindcss)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-**🚀 在线演示**: [Cloudflare Pages](https://cyberpunk-snake-game.pages.dev)
+**🚀 在线演示**: [Cloudflare Pages](https://snakegame-doe.pages.dev)
 
 ## ✨ 核心特性
 
@@ -209,7 +209,7 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
    - Output directory: `dist`
 4. 点击部署，完成！
 
-**在线演示**: https://cyberpunk-snake-game.pages.dev
+**在线演示**: https://snakegame-doe.pages.dev
 
 ### 本地开发
 
@@ -232,3 +232,7 @@ pnpm build
 ---
 
 **享受赛博朋克风格的贪吃蛇游戏吧！** 🚀✨
+
+## 变更记录
+
+- 2026-10-25：移除 Manus WebDev 模板残留（内联 React 运行时插件、调试日志收集器、/manus-storage 代理、express 服务端、	emplate.json），线上 HTML 从 367 KB 降到约 1 KB；修正演示地址。
